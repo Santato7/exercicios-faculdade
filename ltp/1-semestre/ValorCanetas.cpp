@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
   int quantidadeCaneta, valorNota;
-  float troco, valorCaneta;
+  float troco;
   
   cout << "Quantas canetas foram compradas?\n";
   cin >> quantidadeCaneta;
@@ -17,9 +17,7 @@ int main()
   cout << "Recebeu quanto de troco?\n";
   cin >> troco;
   
-  valorCaneta = (valorNota - troco) / quantidadeCaneta;
-  
-  cout << "Cada caneta custou R$" << valorCaneta;
+  cout << "Cada caneta custou R$" << (valorNota - troco) / quantidadeCaneta;;
   
   return 0;
 }
